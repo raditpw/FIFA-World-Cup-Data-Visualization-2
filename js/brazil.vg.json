@@ -18,7 +18,7 @@
       "value": "All",
       "bind": {
         "input": "radio",
-        "name": "",
+        "name": " ",
         "options": [
           "All",
           "Brazil",
