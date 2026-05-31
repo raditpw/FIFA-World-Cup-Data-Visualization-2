@@ -1,0 +1,630 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Matildas' top scorers",
+    "font": "AusWC2026",
+    "fontSize": 22,
+    "anchor": "start",
+    "offset": 8
+  },
+  "width": 360,
+  "height": 360,
+  "params": [
+    {
+      "name": "who",
+      "value": "All",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "All",
+          "Lisa De Vanna",
+          "Sam Kerr",
+          "Kyah Simon"
+        ],
+        "name": ""
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "ring": "0.2",
+            "x": 1.4695761589768238e-15,
+            "y": -24.0,
+            "order": 0
+          },
+          {
+            "ring": "0.2",
+            "x": 22.825356391083684,
+            "y": -7.416407864998737,
+            "order": 1
+          },
+          {
+            "ring": "0.2",
+            "x": 14.106846055019355,
+            "y": 19.41640786499874,
+            "order": 2
+          },
+          {
+            "ring": "0.2",
+            "x": -14.106846055019354,
+            "y": 19.41640786499874,
+            "order": 3
+          },
+          {
+            "ring": "0.2",
+            "x": -22.825356391083687,
+            "y": -7.416407864998735,
+            "order": 4
+          },
+          {
+            "ring": "0.2",
+            "x": 1.4695761589768238e-15,
+            "y": -24.0,
+            "order": 5
+          },
+          {
+            "ring": "0.4",
+            "x": 2.9391523179536475e-15,
+            "y": -48.0,
+            "order": 0
+          },
+          {
+            "ring": "0.4",
+            "x": 45.65071278216737,
+            "y": -14.832815729997474,
+            "order": 1
+          },
+          {
+            "ring": "0.4",
+            "x": 28.21369211003871,
+            "y": 38.83281572999748,
+            "order": 2
+          },
+          {
+            "ring": "0.4",
+            "x": -28.213692110038707,
+            "y": 38.83281572999748,
+            "order": 3
+          },
+          {
+            "ring": "0.4",
+            "x": -45.650712782167375,
+            "y": -14.83281572999747,
+            "order": 4
+          },
+          {
+            "ring": "0.4",
+            "x": 2.9391523179536475e-15,
+            "y": -48.0,
+            "order": 5
+          },
+          {
+            "ring": "0.6",
+            "x": 4.408728476930472e-15,
+            "y": -72.0,
+            "order": 0
+          },
+          {
+            "ring": "0.6",
+            "x": 68.47606917325105,
+            "y": -22.249223594996213,
+            "order": 1
+          },
+          {
+            "ring": "0.6",
+            "x": 42.32053816505807,
+            "y": 58.24922359499622,
+            "order": 2
+          },
+          {
+            "ring": "0.6",
+            "x": -42.32053816505806,
+            "y": 58.24922359499622,
+            "order": 3
+          },
+          {
+            "ring": "0.6",
+            "x": -68.47606917325106,
+            "y": -22.249223594996206,
+            "order": 4
+          },
+          {
+            "ring": "0.6",
+            "x": 4.408728476930472e-15,
+            "y": -72.0,
+            "order": 5
+          },
+          {
+            "ring": "0.8",
+            "x": 5.878304635907295e-15,
+            "y": -96.0,
+            "order": 0
+          },
+          {
+            "ring": "0.8",
+            "x": 91.30142556433474,
+            "y": -29.665631459994948,
+            "order": 1
+          },
+          {
+            "ring": "0.8",
+            "x": 56.42738422007742,
+            "y": 77.66563145999496,
+            "order": 2
+          },
+          {
+            "ring": "0.8",
+            "x": -56.427384220077414,
+            "y": 77.66563145999496,
+            "order": 3
+          },
+          {
+            "ring": "0.8",
+            "x": -91.30142556433475,
+            "y": -29.66563145999494,
+            "order": 4
+          },
+          {
+            "ring": "0.8",
+            "x": 5.878304635907295e-15,
+            "y": -96.0,
+            "order": 5
+          },
+          {
+            "ring": "1.0",
+            "x": 7.34788079488412e-15,
+            "y": -120.0,
+            "order": 0
+          },
+          {
+            "ring": "1.0",
+            "x": 114.12678195541842,
+            "y": -37.08203932499369,
+            "order": 1
+          },
+          {
+            "ring": "1.0",
+            "x": 70.53423027509677,
+            "y": 97.0820393249937,
+            "order": 2
+          },
+          {
+            "ring": "1.0",
+            "x": -70.53423027509676,
+            "y": 97.0820393249937,
+            "order": 3
+          },
+          {
+            "ring": "1.0",
+            "x": -114.12678195541844,
+            "y": -37.08203932499367,
+            "order": 4
+          },
+          {
+            "ring": "1.0",
+            "x": 7.34788079488412e-15,
+            "y": -120.0,
+            "order": 5
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "stroke": "#dddddd",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -194,
+              194
+            ]
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -194,
+              194
+            ]
+          },
+          "axis": null
+        },
+        "detail": {
+          "field": "ring"
+        },
+        "order": {
+          "field": "order"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0,
+            "y": 0,
+            "order": 0,
+            "sid": 0
+          },
+          {
+            "x": 7.34788079488412e-15,
+            "y": -120.0,
+            "order": 1,
+            "sid": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "order": 0,
+            "sid": 1
+          },
+          {
+            "x": 114.12678195541842,
+            "y": -37.08203932499369,
+            "order": 1,
+            "sid": 1
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "order": 0,
+            "sid": 2
+          },
+          {
+            "x": 70.53423027509677,
+            "y": 97.0820393249937,
+            "order": 1,
+            "sid": 2
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "order": 0,
+            "sid": 3
+          },
+          {
+            "x": -70.53423027509676,
+            "y": 97.0820393249937,
+            "order": 1,
+            "sid": 3
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "order": 0,
+            "sid": 4
+          },
+          {
+            "x": -114.12678195541844,
+            "y": -37.08203932499367,
+            "order": 1,
+            "sid": 4
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "stroke": "#dddddd",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "detail": {
+          "field": "sid"
+        },
+        "order": {
+          "field": "order"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "axis": "Matches played",
+            "x": 9.919639073093561e-15,
+            "y": -162.0
+          },
+          {
+            "axis": "Matches started",
+            "x": 154.07115563981486,
+            "y": -50.06075308874148
+          },
+          {
+            "axis": "Tournaments played",
+            "x": 95.22121087138065,
+            "y": 131.06075308874148
+          },
+          {
+            "axis": "Goals scored",
+            "x": -95.22121087138063,
+            "y": 131.06075308874148
+          },
+          {
+            "axis": "Yellow cards",
+            "x": -154.0711556398149,
+            "y": -50.06075308874146
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "ClashDisplay",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "color": "#1a1526"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "axis"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "player": "Lisa De Vanna",
+            "axis": "Matches played",
+            "value": 15,
+            "x": 5.5109105961630896e-15,
+            "y": -90.0,
+            "order": 0
+          },
+          {
+            "player": "Lisa De Vanna",
+            "axis": "Matches started",
+            "value": 10,
+            "x": 76.08452130361228,
+            "y": -24.721359549995793,
+            "order": 1
+          },
+          {
+            "player": "Lisa De Vanna",
+            "axis": "Tournaments played",
+            "value": 4,
+            "x": 56.42738422007742,
+            "y": 77.66563145999496,
+            "order": 2
+          },
+          {
+            "player": "Lisa De Vanna",
+            "axis": "Goals scored",
+            "value": 7,
+            "x": -56.427384220077414,
+            "y": 77.66563145999496,
+            "order": 3
+          },
+          {
+            "player": "Lisa De Vanna",
+            "axis": "Yellow cards",
+            "value": 2,
+            "x": -91.30142556433475,
+            "y": -29.66563145999494,
+            "order": 4
+          },
+          {
+            "player": "Lisa De Vanna",
+            "axis": "Matches played",
+            "value": 15,
+            "x": 5.5109105961630896e-15,
+            "y": -90.0,
+            "order": 5
+          },
+          {
+            "player": "Sam Kerr",
+            "axis": "Matches played",
+            "value": 16,
+            "x": 5.878304635907295e-15,
+            "y": -96.0,
+            "order": 0
+          },
+          {
+            "player": "Sam Kerr",
+            "axis": "Matches started",
+            "value": 12,
+            "x": 91.30142556433474,
+            "y": -29.665631459994948,
+            "order": 1
+          },
+          {
+            "player": "Sam Kerr",
+            "axis": "Tournaments played",
+            "value": 4,
+            "x": 56.42738422007742,
+            "y": 77.66563145999496,
+            "order": 2
+          },
+          {
+            "player": "Sam Kerr",
+            "axis": "Goals scored",
+            "value": 6,
+            "x": -48.36632933149492,
+            "y": 66.57054125142425,
+            "order": 3
+          },
+          {
+            "player": "Sam Kerr",
+            "axis": "Yellow cards",
+            "value": 0,
+            "x": -0.0,
+            "y": -0.0,
+            "order": 4
+          },
+          {
+            "player": "Sam Kerr",
+            "axis": "Matches played",
+            "value": 16,
+            "x": 5.878304635907295e-15,
+            "y": -96.0,
+            "order": 5
+          },
+          {
+            "player": "Kyah Simon",
+            "axis": "Matches played",
+            "value": 10,
+            "x": 3.67394039744206e-15,
+            "y": -60.0,
+            "order": 0
+          },
+          {
+            "player": "Kyah Simon",
+            "axis": "Matches started",
+            "value": 6,
+            "x": 45.65071278216737,
+            "y": -14.832815729997474,
+            "order": 1
+          },
+          {
+            "player": "Kyah Simon",
+            "axis": "Tournaments played",
+            "value": 3,
+            "x": 42.32053816505807,
+            "y": 58.24922359499622,
+            "order": 2
+          },
+          {
+            "player": "Kyah Simon",
+            "axis": "Goals scored",
+            "value": 5,
+            "x": -40.30527444291244,
+            "y": 55.47545104285355,
+            "order": 3
+          },
+          {
+            "player": "Kyah Simon",
+            "axis": "Yellow cards",
+            "value": 1,
+            "x": -45.650712782167375,
+            "y": -14.83281572999747,
+            "order": 4
+          },
+          {
+            "player": "Kyah Simon",
+            "axis": "Matches played",
+            "value": 10,
+            "x": 3.67394039744206e-15,
+            "y": -60.0,
+            "order": 5
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "who == 'All' || datum.player == who"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "fillOpacity": 0.22,
+        "point": {
+          "filled": true,
+          "size": 50
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "order": {
+          "field": "order"
+        },
+        "detail": {
+          "field": "player"
+        },
+        "fill": {
+          "field": "player",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Lisa De Vanna",
+              "Sam Kerr",
+              "Kyah Simon"
+            ],
+            "range": [
+              "#e8112d",
+              "#2b5fd9",
+              "#f4d23c"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom",
+            "labelFont": "ClashDisplay",
+            "labelFontSize": 11
+          }
+        },
+        "stroke": {
+          "field": "player",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Lisa De Vanna",
+              "Sam Kerr",
+              "Kyah Simon"
+            ],
+            "range": [
+              "#e8112d",
+              "#2b5fd9",
+              "#f4d23c"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "player",
+            "type": "nominal",
+            "title": "Player"
+          },
+          {
+            "field": "axis",
+            "type": "nominal",
+            "title": "Measure"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,773 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Klose's climb to the top",
+    "font": "AusWC2026",
+    "fontSize": 22,
+    "anchor": "start",
+    "offset": 8
+  },
+  "width": 640,
+  "height": 380,
+  "data": {
+    "values": [
+      {
+        "slider_year": 1998,
+        "player": "Gerd Müller",
+        "goals": 14,
+        "rank": 1,
+        "is_klose": false,
+        "img": "images/gerd muller.png",
+        "short": "Müller"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Just Fontaine",
+        "goals": 13,
+        "rank": 2,
+        "is_klose": false,
+        "img": "images/fontaine.png",
+        "short": "Fontaine"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Pelé",
+        "goals": 12,
+        "rank": 3,
+        "is_klose": false,
+        "img": "images/pele.png",
+        "short": "Pelé"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Sándor Kocsis",
+        "goals": 11,
+        "rank": 4,
+        "is_klose": false,
+        "img": "images/kocsis.png",
+        "short": "Kocsis"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Jürgen Klinsmann",
+        "goals": 11,
+        "rank": 5,
+        "is_klose": false,
+        "img": "images/klinsmann.png",
+        "short": "Klinsmann"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Helmut Rahn",
+        "goals": 10,
+        "rank": 6,
+        "is_klose": false,
+        "img": "images/rahn.png",
+        "short": "Rahn"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Teófilo Cubillas",
+        "goals": 10,
+        "rank": 7,
+        "is_klose": false,
+        "img": "images/teofilo.png",
+        "short": "Cubillas"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Grzegorz Lato",
+        "goals": 10,
+        "rank": 8,
+        "is_klose": false,
+        "img": "images/lato.png",
+        "short": "Lato"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Gary Lineker",
+        "goals": 10,
+        "rank": 9,
+        "is_klose": false,
+        "img": "images/lineker.png",
+        "short": "Lineker"
+      },
+      {
+        "slider_year": 1998,
+        "player": "Ademir",
+        "goals": 9,
+        "rank": 10,
+        "is_klose": false,
+        "img": "images/ademir.png",
+        "short": "Ademir"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Gerd Müller",
+        "goals": 14,
+        "rank": 1,
+        "is_klose": false,
+        "img": "images/gerd muller.png",
+        "short": "Müller"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Just Fontaine",
+        "goals": 13,
+        "rank": 2,
+        "is_klose": false,
+        "img": "images/fontaine.png",
+        "short": "Fontaine"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Pelé",
+        "goals": 12,
+        "rank": 3,
+        "is_klose": false,
+        "img": "images/pele.png",
+        "short": "Pelé"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Ronaldo",
+        "goals": 12,
+        "rank": 4,
+        "is_klose": false,
+        "img": "images/ronaldo nazario.png",
+        "short": "Ronaldo"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Sándor Kocsis",
+        "goals": 11,
+        "rank": 5,
+        "is_klose": false,
+        "img": "images/kocsis.png",
+        "short": "Kocsis"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Jürgen Klinsmann",
+        "goals": 11,
+        "rank": 6,
+        "is_klose": false,
+        "img": "images/klinsmann.png",
+        "short": "Klinsmann"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Helmut Rahn",
+        "goals": 10,
+        "rank": 7,
+        "is_klose": false,
+        "img": "images/rahn.png",
+        "short": "Rahn"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Teófilo Cubillas",
+        "goals": 10,
+        "rank": 8,
+        "is_klose": false,
+        "img": "images/teofilo.png",
+        "short": "Cubillas"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Grzegorz Lato",
+        "goals": 10,
+        "rank": 9,
+        "is_klose": false,
+        "img": "images/lato.png",
+        "short": "Lato"
+      },
+      {
+        "slider_year": 2002,
+        "player": "Gary Lineker",
+        "goals": 10,
+        "rank": 10,
+        "is_klose": false,
+        "img": "images/lineker.png",
+        "short": "Lineker"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Ronaldo",
+        "goals": 15,
+        "rank": 1,
+        "is_klose": false,
+        "img": "images/ronaldo nazario.png",
+        "short": "Ronaldo"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Gerd Müller",
+        "goals": 14,
+        "rank": 2,
+        "is_klose": false,
+        "img": "images/gerd muller.png",
+        "short": "Müller"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Just Fontaine",
+        "goals": 13,
+        "rank": 3,
+        "is_klose": false,
+        "img": "images/fontaine.png",
+        "short": "Fontaine"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Pelé",
+        "goals": 12,
+        "rank": 4,
+        "is_klose": false,
+        "img": "images/pele.png",
+        "short": "Pelé"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Sándor Kocsis",
+        "goals": 11,
+        "rank": 5,
+        "is_klose": false,
+        "img": "images/kocsis.png",
+        "short": "Kocsis"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Jürgen Klinsmann",
+        "goals": 11,
+        "rank": 6,
+        "is_klose": false,
+        "img": "images/klinsmann.png",
+        "short": "Klinsmann"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Helmut Rahn",
+        "goals": 10,
+        "rank": 7,
+        "is_klose": false,
+        "img": "images/rahn.png",
+        "short": "Rahn"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Teófilo Cubillas",
+        "goals": 10,
+        "rank": 8,
+        "is_klose": false,
+        "img": "images/teofilo.png",
+        "short": "Cubillas"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Grzegorz Lato",
+        "goals": 10,
+        "rank": 9,
+        "is_klose": false,
+        "img": "images/lato.png",
+        "short": "Lato"
+      },
+      {
+        "slider_year": 2006,
+        "player": "Gary Lineker",
+        "goals": 10,
+        "rank": 10,
+        "is_klose": false,
+        "img": "images/lineker.png",
+        "short": "Lineker"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Ronaldo",
+        "goals": 15,
+        "rank": 1,
+        "is_klose": false,
+        "img": "images/ronaldo nazario.png",
+        "short": "Ronaldo"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Gerd Müller",
+        "goals": 14,
+        "rank": 2,
+        "is_klose": false,
+        "img": "images/gerd muller.png",
+        "short": "Müller"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Miroslav Klose",
+        "goals": 14,
+        "rank": 3,
+        "is_klose": true,
+        "img": "images/klose.png",
+        "short": "Klose"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Just Fontaine",
+        "goals": 13,
+        "rank": 4,
+        "is_klose": false,
+        "img": "images/fontaine.png",
+        "short": "Fontaine"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Pelé",
+        "goals": 12,
+        "rank": 5,
+        "is_klose": false,
+        "img": "images/pele.png",
+        "short": "Pelé"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Sándor Kocsis",
+        "goals": 11,
+        "rank": 6,
+        "is_klose": false,
+        "img": "images/kocsis.png",
+        "short": "Kocsis"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Jürgen Klinsmann",
+        "goals": 11,
+        "rank": 7,
+        "is_klose": false,
+        "img": "images/klinsmann.png",
+        "short": "Klinsmann"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Helmut Rahn",
+        "goals": 10,
+        "rank": 8,
+        "is_klose": false,
+        "img": "images/rahn.png",
+        "short": "Rahn"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Teófilo Cubillas",
+        "goals": 10,
+        "rank": 9,
+        "is_klose": false,
+        "img": "images/teofilo.png",
+        "short": "Cubillas"
+      },
+      {
+        "slider_year": 2010,
+        "player": "Grzegorz Lato",
+        "goals": 10,
+        "rank": 10,
+        "is_klose": false,
+        "img": "images/lato.png",
+        "short": "Lato"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Miroslav Klose",
+        "goals": 16,
+        "rank": 1,
+        "is_klose": true,
+        "img": "images/klose.png",
+        "short": "Klose"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Ronaldo",
+        "goals": 15,
+        "rank": 2,
+        "is_klose": false,
+        "img": "images/ronaldo nazario.png",
+        "short": "Ronaldo"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Gerd Müller",
+        "goals": 14,
+        "rank": 3,
+        "is_klose": false,
+        "img": "images/gerd muller.png",
+        "short": "Müller"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Just Fontaine",
+        "goals": 13,
+        "rank": 4,
+        "is_klose": false,
+        "img": "images/fontaine.png",
+        "short": "Fontaine"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Pelé",
+        "goals": 12,
+        "rank": 5,
+        "is_klose": false,
+        "img": "images/pele.png",
+        "short": "Pelé"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Sándor Kocsis",
+        "goals": 11,
+        "rank": 6,
+        "is_klose": false,
+        "img": "images/kocsis.png",
+        "short": "Kocsis"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Jürgen Klinsmann",
+        "goals": 11,
+        "rank": 7,
+        "is_klose": false,
+        "img": "images/klinsmann.png",
+        "short": "Klinsmann"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Helmut Rahn",
+        "goals": 10,
+        "rank": 8,
+        "is_klose": false,
+        "img": "images/rahn.png",
+        "short": "Rahn"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Teófilo Cubillas",
+        "goals": 10,
+        "rank": 9,
+        "is_klose": false,
+        "img": "images/teofilo.png",
+        "short": "Cubillas"
+      },
+      {
+        "slider_year": 2014,
+        "player": "Grzegorz Lato",
+        "goals": 10,
+        "rank": 10,
+        "is_klose": false,
+        "img": "images/lato.png",
+        "short": "Lato"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Miroslav Klose",
+        "goals": 16,
+        "rank": 1,
+        "is_klose": true,
+        "img": "images/klose.png",
+        "short": "Klose"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Ronaldo",
+        "goals": 15,
+        "rank": 2,
+        "is_klose": false,
+        "img": "images/ronaldo nazario.png",
+        "short": "Ronaldo"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Gerd Müller",
+        "goals": 14,
+        "rank": 3,
+        "is_klose": false,
+        "img": "images/gerd muller.png",
+        "short": "Müller"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Just Fontaine",
+        "goals": 13,
+        "rank": 4,
+        "is_klose": false,
+        "img": "images/fontaine.png",
+        "short": "Fontaine"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Pelé",
+        "goals": 12,
+        "rank": 5,
+        "is_klose": false,
+        "img": "images/pele.png",
+        "short": "Pelé"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Sándor Kocsis",
+        "goals": 11,
+        "rank": 6,
+        "is_klose": false,
+        "img": "images/kocsis.png",
+        "short": "Kocsis"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Jürgen Klinsmann",
+        "goals": 11,
+        "rank": 7,
+        "is_klose": false,
+        "img": "images/klinsmann.png",
+        "short": "Klinsmann"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Helmut Rahn",
+        "goals": 10,
+        "rank": 8,
+        "is_klose": false,
+        "img": "images/rahn.png",
+        "short": "Rahn"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Teófilo Cubillas",
+        "goals": 10,
+        "rank": 9,
+        "is_klose": false,
+        "img": "images/teofilo.png",
+        "short": "Cubillas"
+      },
+      {
+        "slider_year": 2018,
+        "player": "Grzegorz Lato",
+        "goals": 10,
+        "rank": 10,
+        "is_klose": false,
+        "img": "images/lato.png",
+        "short": "Lato"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Miroslav Klose",
+        "goals": 16,
+        "rank": 1,
+        "is_klose": true,
+        "img": "images/klose.png",
+        "short": "Klose"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Ronaldo",
+        "goals": 15,
+        "rank": 2,
+        "is_klose": false,
+        "img": "images/ronaldo nazario.png",
+        "short": "Ronaldo"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Gerd Müller",
+        "goals": 14,
+        "rank": 3,
+        "is_klose": false,
+        "img": "images/gerd muller.png",
+        "short": "Müller"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Just Fontaine",
+        "goals": 13,
+        "rank": 4,
+        "is_klose": false,
+        "img": "images/fontaine.png",
+        "short": "Fontaine"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Lionel Messi",
+        "goals": 13,
+        "rank": 5,
+        "is_klose": false,
+        "img": "images/messi.png",
+        "short": "Messi"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Pelé",
+        "goals": 12,
+        "rank": 6,
+        "is_klose": false,
+        "img": "images/pele.png",
+        "short": "Pelé"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Kylian Mbappé",
+        "goals": 12,
+        "rank": 7,
+        "is_klose": false,
+        "img": "images/mbappe.png",
+        "short": "Mbappé"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Sándor Kocsis",
+        "goals": 11,
+        "rank": 8,
+        "is_klose": false,
+        "img": "images/kocsis.png",
+        "short": "Kocsis"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Jürgen Klinsmann",
+        "goals": 11,
+        "rank": 9,
+        "is_klose": false,
+        "img": "images/klinsmann.png",
+        "short": "Klinsmann"
+      },
+      {
+        "slider_year": 2022,
+        "player": "Helmut Rahn",
+        "goals": 10,
+        "rank": 10,
+        "is_klose": false,
+        "img": "images/rahn.png",
+        "short": "Rahn"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "yr",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1998,
+        "max": 2022,
+        "step": 4,
+        "name": "World cup year:  "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.slider_year == yr"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "rank",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labels": false,
+        "ticks": false,
+        "domain": false
+      }
+    },
+    "y": {
+      "field": "goals",
+      "type": "quantitative",
+      "title": "Career World Cup goals",
+      "scale": {
+        "domain": [
+          0,
+          20
+        ]
+      },
+      "axis": {
+        "titleFont": "ClashDisplay",
+        "labelFont": "ClashDisplay",
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 9,
+        "strokeCap": "round"
+      },
+      "encoding": {
+        "y2": {
+          "datum": 0
+        },
+        "color": {
+          "condition": {
+            "test": "datum.is_klose",
+            "value": "#0a84ff"
+          },
+          "value": "#5cc0ff"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "image",
+        "width": 50,
+        "height": 50,
+        "yOffset": -28
+      },
+      "encoding": {
+        "url": {
+          "field": "img",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": 16,
+        "font": "ClashDisplay",
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": {
+          "field": "short",
+          "type": "nominal"
+        },
+        "y": {
+          "datum": 0
+        },
+        "color": {
+          "condition": {
+            "test": "datum.is_klose",
+            "value": "#0a84ff"
+          },
+          "value": "#777"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -54,
+        "font": "ClashDisplay",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "fill": "#1a1526"
+      },
+      "encoding": {
+        "text": {
+          "field": "goals",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

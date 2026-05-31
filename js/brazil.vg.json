@@ -1,0 +1,586 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 1000,
+  "height": 560,
+  "padding": 5,
+  "background": null,
+  "autosize": "pad",
+  "title": {
+    "text": "Countries that has won the world cup",
+    "font": "AusWC2026",
+    "fontSize": 19,
+    "anchor": "start",
+    "offset": 12
+  },
+  "signals": [
+    {
+      "name": "selCountry",
+      "value": "All",
+      "bind": {
+        "input": "radio",
+        "name": "",
+        "options": [
+          "All",
+          "Brazil",
+          "Italy",
+          "Germany",
+          "Argentina",
+          "Uruguay",
+          "France",
+          "England",
+          "Spain"
+        ]
+      }
+    }
+  ],
+  "data": [
+    {
+      "name": "titles",
+      "values": [
+        {
+          "country": "Brazil",
+          "year": 1958,
+          "total": 5,
+          "note": "First title in Sweden — a 17-year-old Pelé announces himself"
+        },
+        {
+          "country": "Brazil",
+          "year": 1962,
+          "total": 5,
+          "note": "Back-to-back champions, in Chile"
+        },
+        {
+          "country": "Brazil",
+          "year": 1970,
+          "total": 5,
+          "note": "Perfect 6 from 6 — often called the greatest team ever"
+        },
+        {
+          "country": "Brazil",
+          "year": 1994,
+          "total": 5,
+          "note": "Ends a 24-year wait, won in the USA"
+        },
+        {
+          "country": "Brazil",
+          "year": 2002,
+          "total": 5,
+          "note": "Perfect 7 from 7 — Ronaldo's redemption"
+        },
+        {
+          "country": "Italy",
+          "year": 1934,
+          "total": 4,
+          "note": "First title, on home soil"
+        },
+        {
+          "country": "Italy",
+          "year": 1938,
+          "total": 4,
+          "note": "Back-to-back, in France"
+        },
+        {
+          "country": "Italy",
+          "year": 1982,
+          "total": 4,
+          "note": "Paolo Rossi fires Italy to glory in Spain"
+        },
+        {
+          "country": "Italy",
+          "year": 2006,
+          "total": 4,
+          "note": "Won on penalties in Berlin"
+        },
+        {
+          "country": "Germany",
+          "year": 1954,
+          "total": 4,
+          "note": "The Miracle of Bern"
+        },
+        {
+          "country": "Germany",
+          "year": 1974,
+          "total": 4,
+          "note": "Beckenbauer lifts the trophy at home"
+        },
+        {
+          "country": "Germany",
+          "year": 1990,
+          "total": 4,
+          "note": "Third star, won in Italy"
+        },
+        {
+          "country": "Germany",
+          "year": 2014,
+          "total": 4,
+          "note": "7–1 over Brazil en route to the title"
+        },
+        {
+          "country": "Argentina",
+          "year": 1978,
+          "total": 3,
+          "note": "First title, on home soil"
+        },
+        {
+          "country": "Argentina",
+          "year": 1986,
+          "total": 3,
+          "note": "Maradona's tournament in Mexico"
+        },
+        {
+          "country": "Argentina",
+          "year": 2022,
+          "total": 3,
+          "note": "Messi's crowning glory in Qatar"
+        },
+        {
+          "country": "Uruguay",
+          "year": 1930,
+          "total": 2,
+          "note": "Champions of the first-ever World Cup"
+        },
+        {
+          "country": "Uruguay",
+          "year": 1950,
+          "total": 2,
+          "note": "The Maracanazo — silenced Brazil at home"
+        },
+        {
+          "country": "France",
+          "year": 1998,
+          "total": 2,
+          "note": "Zidane leads les Bleus at home"
+        },
+        {
+          "country": "France",
+          "year": 2018,
+          "total": 2,
+          "note": "A young side triumphs in Russia"
+        },
+        {
+          "country": "England",
+          "year": 1966,
+          "total": 1,
+          "note": "Their only title, won at Wembley"
+        },
+        {
+          "country": "Spain",
+          "year": 2010,
+          "total": 1,
+          "note": "First title, won in South Africa"
+        }
+      ]
+    },
+    {
+      "name": "countryOrder",
+      "values": [
+        {
+          "country": "Brazil",
+          "ord": 0,
+          "color": "#2bb24c"
+        },
+        {
+          "country": "Italy",
+          "ord": 1,
+          "color": "#0b7fd1"
+        },
+        {
+          "country": "Germany",
+          "ord": 2,
+          "color": "#2e2e34"
+        },
+        {
+          "country": "Argentina",
+          "ord": 3,
+          "color": "#8fc1e8"
+        },
+        {
+          "country": "Uruguay",
+          "ord": 4,
+          "color": "#1ba0a2"
+        },
+        {
+          "country": "France",
+          "ord": 5,
+          "color": "#26346b"
+        },
+        {
+          "country": "England",
+          "ord": 6,
+          "color": "#cf2b2b"
+        },
+        {
+          "country": "Spain",
+          "ord": 7,
+          "color": "#e0b020"
+        }
+      ]
+    },
+    {
+      "name": "countryNodes",
+      "source": "titles",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "country",
+            "total"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "countryOrder",
+          "key": "country",
+          "fields": [
+            "country"
+          ],
+          "values": [
+            "ord",
+            "color"
+          ]
+        },
+        {
+          "type": "collect",
+          "sort": {
+            "field": "ord"
+          }
+        },
+        {
+          "type": "stack",
+          "field": "total",
+          "offset": "zero",
+          "sort": {
+            "field": "ord"
+          }
+        },
+        {
+          "type": "formula",
+          "as": "y0",
+          "expr": "scale('cY', datum.y0) + datum.ord * 16"
+        },
+        {
+          "type": "formula",
+          "as": "y1",
+          "expr": "scale('cY', datum.y1) + datum.ord * 16"
+        },
+        {
+          "type": "formula",
+          "as": "yc",
+          "expr": "(datum.y0 + datum.y1)/2"
+        },
+        {
+          "type": "formula",
+          "as": "slot",
+          "expr": "(datum.y1 - datum.y0) / datum.total"
+        }
+      ]
+    },
+    {
+      "name": "yearNodes",
+      "source": "titles",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [
+            "year"
+          ]
+        },
+        {
+          "type": "collect",
+          "sort": {
+            "field": "year"
+          }
+        },
+        {
+          "type": "window",
+          "ops": [
+            "row_number"
+          ],
+          "as": [
+            "yi"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "yc",
+          "expr": "80 + (datum.yi - 1) * ((height - 95) / 21)"
+        }
+      ]
+    },
+    {
+      "name": "links",
+      "source": "titles",
+      "transform": [
+        {
+          "type": "collect",
+          "sort": {
+            "field": "year"
+          }
+        },
+        {
+          "type": "window",
+          "groupby": [
+            "country"
+          ],
+          "ops": [
+            "rank"
+          ],
+          "as": [
+            "cseq"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "countryNodes",
+          "key": "country",
+          "fields": [
+            "country"
+          ],
+          "values": [
+            "y0",
+            "y1",
+            "yc",
+            "total",
+            "color",
+            "slot"
+          ],
+          "as": [
+            "cY0",
+            "cY1",
+            "cyc",
+            "ctotal",
+            "ccolor",
+            "cslot"
+          ]
+        },
+        {
+          "type": "lookup",
+          "from": "yearNodes",
+          "key": "year",
+          "fields": [
+            "year"
+          ],
+          "values": [
+            "yc"
+          ],
+          "as": [
+            "yyc"
+          ]
+        },
+        {
+          "type": "formula",
+          "as": "anchorY",
+          "expr": "datum.cY0 + (datum.cseq - 0.5) * datum.cslot"
+        },
+        {
+          "type": "formula",
+          "as": "lw",
+          "expr": "max(3, datum.cslot * 0.78)"
+        },
+        {
+          "type": "formula",
+          "as": "sx",
+          "expr": "180"
+        },
+        {
+          "type": "formula",
+          "as": "tx",
+          "expr": "width - 150"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "cY",
+      "type": "linear",
+      "domain": [
+        0,
+        22
+      ],
+      "range": [
+        50,
+        {
+          "signal": "height - 20"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "path",
+      "name": "ribbons",
+      "from": {
+        "data": "links"
+      },
+      "encode": {
+        "update": {
+          "stroke": {
+            "field": "ccolor"
+          },
+          "strokeWidth": {
+            "field": "lw"
+          },
+          "strokeOpacity": {
+            "signal": "selCountry == 'All' ? 0.5 : (datum.country === selCountry ? 0.92 : 0.04)"
+          },
+          "strokeCap": {
+            "value": "round"
+          },
+          "fill": {
+            "value": null
+          },
+          "tooltip": {
+            "signal": "{'Country': datum.country, 'Year': datum.year, 'Total titles': datum.ctotal, 'Story': datum.note}"
+          },
+          "path": {
+            "signal": "'M' + datum.sx + ',' + datum.anchorY + 'C' + ((datum.sx+datum.tx)/2) + ',' + datum.anchorY + ' ' + ((datum.sx+datum.tx)/2) + ',' + datum.yyc + ' ' + datum.tx + ',' + datum.yyc"
+          }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "name": "countryNodesMark",
+      "from": {
+        "data": "countryNodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "value": 166
+          },
+          "x2": {
+            "value": 180
+          },
+          "y": {
+            "field": "y0"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "field": "color"
+          },
+          "fillOpacity": {
+            "signal": "selCountry == 'All' || datum.country === selCountry ? 1 : 0.2"
+          },
+          "cornerRadius": {
+            "value": 3
+          },
+          "tooltip": {
+            "signal": "{'Country': datum.country, 'Total titles': datum.total}"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "countryLabels",
+      "from": {
+        "data": "countryNodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "value": 158
+          },
+          "y": {
+            "field": "yc"
+          },
+          "text": {
+            "field": "country"
+          },
+          "align": {
+            "value": "right"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "ClashDisplay"
+          },
+          "fontSize": {
+            "value": 14
+          },
+          "fontWeight": {
+            "value": "bold"
+          },
+          "fill": {
+            "value": "#1a1526"
+          },
+          "fillOpacity": {
+            "signal": "selCountry == 'All' || datum.country === selCountry ? 1 : 0.25"
+          }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "name": "yearNodesMark",
+      "from": {
+        "data": "yearNodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "width - 150"
+          },
+          "x2": {
+            "signal": "width - 146"
+          },
+          "y": {
+            "field": "yc",
+            "offset": -6
+          },
+          "y2": {
+            "field": "yc",
+            "offset": 6
+          },
+          "fill": {
+            "value": "#1a1526"
+          },
+          "cornerRadius": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "name": "yearLabels",
+      "from": {
+        "data": "yearNodes"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "width - 142"
+          },
+          "y": {
+            "field": "yc"
+          },
+          "text": {
+            "field": "year",
+            "format": "d"
+          },
+          "align": {
+            "value": "left"
+          },
+          "baseline": {
+            "value": "middle"
+          },
+          "font": {
+            "value": "AusWC2026"
+          },
+          "fontSize": {
+            "value": 15
+          },
+          "fill": {
+            "value": "#1a1526"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Forlan's rise at South Africa 2010",
+    "font": "AusWC2026",
+    "fontSize": 22,
+    "anchor": "start",
+    "offset": 8
+  },
+  "width": 620,
+  "height": 380,
+  "data": {
+    "values": [
+      {
+        "stage_step": 0,
+        "stage": "Group",
+        "player": "Villa",
+        "short": "Villa",
+        "img": "images%202010/villa.png",
+        "goals": 3,
+        "rank": 1,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 0,
+        "stage": "Group",
+        "player": "Vittek",
+        "short": "Vittek",
+        "img": "images%202010/vittek.png",
+        "goals": 3,
+        "rank": 2,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 0,
+        "stage": "Group",
+        "player": "Higuaín",
+        "short": "Higuaín",
+        "img": "images%202010/higuain.png",
+        "goals": 3,
+        "rank": 3,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 0,
+        "stage": "Group",
+        "player": "Forlán",
+        "short": "Forlán",
+        "img": "images%202010/forlan.png",
+        "goals": 2,
+        "rank": 4,
+        "is_forlan": true
+      },
+      {
+        "stage_step": 0,
+        "stage": "Group",
+        "player": "Müller",
+        "short": "T. Müller",
+        "img": "images%202010/T%20muller.png",
+        "goals": 1,
+        "rank": 5,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 0,
+        "stage": "Group",
+        "player": "Sneijder",
+        "short": "Sneijder",
+        "img": "images%202010/sneijder.png",
+        "goals": 1,
+        "rank": 6,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 0,
+        "stage": "Group",
+        "player": "Klose",
+        "short": "Klose",
+        "img": "images%202010/klose.png",
+        "goals": 1,
+        "rank": 7,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 1,
+        "stage": "Round of 16",
+        "player": "Villa",
+        "short": "Villa",
+        "img": "images%202010/villa.png",
+        "goals": 4,
+        "rank": 1,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 1,
+        "stage": "Round of 16",
+        "player": "Vittek",
+        "short": "Vittek",
+        "img": "images%202010/vittek.png",
+        "goals": 4,
+        "rank": 2,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 1,
+        "stage": "Round of 16",
+        "player": "Higuaín",
+        "short": "Higuaín",
+        "img": "images%202010/higuain.png",
+        "goals": 4,
+        "rank": 3,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 1,
+        "stage": "Round of 16",
+        "player": "Müller",
+        "short": "T. Müller",
+        "img": "images%202010/T%20muller.png",
+        "goals": 3,
+        "rank": 4,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 1,
+        "stage": "Round of 16",
+        "player": "Forlán",
+        "short": "Forlán",
+        "img": "images%202010/forlan.png",
+        "goals": 2,
+        "rank": 5,
+        "is_forlan": true
+      },
+      {
+        "stage_step": 1,
+        "stage": "Round of 16",
+        "player": "Sneijder",
+        "short": "Sneijder",
+        "img": "images%202010/sneijder.png",
+        "goals": 2,
+        "rank": 6,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 1,
+        "stage": "Round of 16",
+        "player": "Klose",
+        "short": "Klose",
+        "img": "images%202010/klose.png",
+        "goals": 2,
+        "rank": 7,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 2,
+        "stage": "Quarter-finals",
+        "player": "Villa",
+        "short": "Villa",
+        "img": "images%202010/villa.png",
+        "goals": 5,
+        "rank": 1,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 2,
+        "stage": "Quarter-finals",
+        "player": "Müller",
+        "short": "T. Müller",
+        "img": "images%202010/T%20muller.png",
+        "goals": 4,
+        "rank": 2,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 2,
+        "stage": "Quarter-finals",
+        "player": "Sneijder",
+        "short": "Sneijder",
+        "img": "images%202010/sneijder.png",
+        "goals": 4,
+        "rank": 3,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 2,
+        "stage": "Quarter-finals",
+        "player": "Klose",
+        "short": "Klose",
+        "img": "images%202010/klose.png",
+        "goals": 4,
+        "rank": 4,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 2,
+        "stage": "Quarter-finals",
+        "player": "Vittek",
+        "short": "Vittek",
+        "img": "images%202010/vittek.png",
+        "goals": 4,
+        "rank": 5,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 2,
+        "stage": "Quarter-finals",
+        "player": "Higuaín",
+        "short": "Higuaín",
+        "img": "images%202010/higuain.png",
+        "goals": 4,
+        "rank": 6,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 2,
+        "stage": "Quarter-finals",
+        "player": "Forlán",
+        "short": "Forlán",
+        "img": "images%202010/forlan.png",
+        "goals": 3,
+        "rank": 7,
+        "is_forlan": true
+      },
+      {
+        "stage_step": 3,
+        "stage": "Semi-finals",
+        "player": "Sneijder",
+        "short": "Sneijder",
+        "img": "images%202010/sneijder.png",
+        "goals": 5,
+        "rank": 1,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 3,
+        "stage": "Semi-finals",
+        "player": "Villa",
+        "short": "Villa",
+        "img": "images%202010/villa.png",
+        "goals": 5,
+        "rank": 2,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 3,
+        "stage": "Semi-finals",
+        "player": "Forlán",
+        "short": "Forlán",
+        "img": "images%202010/forlan.png",
+        "goals": 4,
+        "rank": 3,
+        "is_forlan": true
+      },
+      {
+        "stage_step": 3,
+        "stage": "Semi-finals",
+        "player": "Müller",
+        "short": "T. Müller",
+        "img": "images%202010/T%20muller.png",
+        "goals": 4,
+        "rank": 4,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 3,
+        "stage": "Semi-finals",
+        "player": "Klose",
+        "short": "Klose",
+        "img": "images%202010/klose.png",
+        "goals": 4,
+        "rank": 5,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 3,
+        "stage": "Semi-finals",
+        "player": "Vittek",
+        "short": "Vittek",
+        "img": "images%202010/vittek.png",
+        "goals": 4,
+        "rank": 6,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 3,
+        "stage": "Semi-finals",
+        "player": "Higuaín",
+        "short": "Higuaín",
+        "img": "images%202010/higuain.png",
+        "goals": 4,
+        "rank": 7,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 4,
+        "stage": "3rd-place",
+        "player": "Forlán",
+        "short": "Forlán",
+        "img": "images%202010/forlan.png",
+        "goals": 5,
+        "rank": 1,
+        "is_forlan": true
+      },
+      {
+        "stage_step": 4,
+        "stage": "3rd-place",
+        "player": "Müller",
+        "short": "T. Müller",
+        "img": "images%202010/T%20muller.png",
+        "goals": 5,
+        "rank": 2,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 4,
+        "stage": "3rd-place",
+        "player": "Sneijder",
+        "short": "Sneijder",
+        "img": "images%202010/sneijder.png",
+        "goals": 5,
+        "rank": 3,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 4,
+        "stage": "3rd-place",
+        "player": "Villa",
+        "short": "Villa",
+        "img": "images%202010/villa.png",
+        "goals": 5,
+        "rank": 4,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 4,
+        "stage": "3rd-place",
+        "player": "Klose",
+        "short": "Klose",
+        "img": "images%202010/klose.png",
+        "goals": 4,
+        "rank": 5,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 4,
+        "stage": "3rd-place",
+        "player": "Vittek",
+        "short": "Vittek",
+        "img": "images%202010/vittek.png",
+        "goals": 4,
+        "rank": 6,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 4,
+        "stage": "3rd-place",
+        "player": "Higuaín",
+        "short": "Higuaín",
+        "img": "images%202010/higuain.png",
+        "goals": 4,
+        "rank": 7,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 5,
+        "stage": "Final",
+        "player": "Forlán",
+        "short": "Forlán",
+        "img": "images%202010/forlan.png",
+        "goals": 5,
+        "rank": 1,
+        "is_forlan": true
+      },
+      {
+        "stage_step": 5,
+        "stage": "Final",
+        "player": "Müller",
+        "short": "T. Müller",
+        "img": "images%202010/T%20muller.png",
+        "goals": 5,
+        "rank": 2,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 5,
+        "stage": "Final",
+        "player": "Sneijder",
+        "short": "Sneijder",
+        "img": "images%202010/sneijder.png",
+        "goals": 5,
+        "rank": 3,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 5,
+        "stage": "Final",
+        "player": "Villa",
+        "short": "Villa",
+        "img": "images%202010/villa.png",
+        "goals": 5,
+        "rank": 4,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 5,
+        "stage": "Final",
+        "player": "Klose",
+        "short": "Klose",
+        "img": "images%202010/klose.png",
+        "goals": 4,
+        "rank": 5,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 5,
+        "stage": "Final",
+        "player": "Vittek",
+        "short": "Vittek",
+        "img": "images%202010/vittek.png",
+        "goals": 4,
+        "rank": 6,
+        "is_forlan": false
+      },
+      {
+        "stage_step": 5,
+        "stage": "Final",
+        "player": "Higuaín",
+        "short": "Higuaín",
+        "img": "images%202010/higuain.png",
+        "goals": 4,
+        "rank": 7,
+        "is_forlan": false
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "step",
+      "value": 5,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 5,
+        "step": 1,
+        "name": "Round:  "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.stage_step == step"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "rank",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labels": false,
+        "ticks": false,
+        "domain": false
+      }
+    },
+    "y": {
+      "field": "goals",
+      "type": "quantitative",
+      "title": "Goals scored so far",
+      "scale": {
+        "domain": [
+          0,
+          7
+        ]
+      },
+      "axis": {
+        "titleFont": "ClashDisplay",
+        "labelFont": "ClashDisplay",
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "format": "d",
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 9,
+        "strokeCap": "round"
+      },
+      "encoding": {
+        "y2": {
+          "datum": 0
+        },
+        "color": {
+          "condition": {
+            "test": "datum.is_forlan",
+            "value": "#0a84ff"
+          },
+          "value": "#5cc0ff"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "image",
+        "width": 50,
+        "height": 50,
+        "yOffset": -28
+      },
+      "encoding": {
+        "url": {
+          "field": "img",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": 16,
+        "font": "ClashDisplay",
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": {
+          "field": "short",
+          "type": "nominal"
+        },
+        "y": {
+          "datum": 0
+        },
+        "color": {
+          "condition": {
+            "test": "datum.is_forlan",
+            "value": "#0a84ff"
+          },
+          "value": "#777"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -54,
+        "font": "ClashDisplay",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "fill": "#1a1526"
+      },
+      "encoding": {
+        "text": {
+          "field": "goals",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

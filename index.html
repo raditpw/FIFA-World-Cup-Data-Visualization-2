@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The FIFA World Cup</title>
+
+  <!-- Pure.css (layout library) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+
+  <!-- Vega-Lite libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <!-- our stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- 1. TITLE / HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="wrap hero-wrap">
+      <div class="hero-text">
+        <h1 class="main-title">The FIFA<br>World Cup</h1>
+        <p class="subtitle">The story of a <strong>legendary</strong> century-old tournament.</p>
+      </div>
+      <div class="hero-trophy">
+        <img src="images%20trophy%202/World-Cup-2026-Logo.png" alt="FIFA World Cup 2026 logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. INTRODUCTION -->
+  <section>
+    <div class="section-banner banner-pitch">
+      <div class="wrap">
+        <p class="section-label">01 — Introduction</p>
+        <h2 class="section-heading">The Legendary Tournament</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="intro-grid">
+        <!-- Left: trophy -->
+        <div class="intro-trophy">
+          <img src="images%20trophy/wc%20trophy.png" alt="FIFA World Cup trophy">
+        </div>
+        <!-- Middle: introduction text -->
+        <div class="intro-copy">
+          <p class="lead lead-gold">Every four years, the world stops to watch a single tournament.</p>
+          <p>It began in 1930, when thirteen nations sailed to Uruguay for a competition no one was sure would last. Ninety years later, the FIFA World Cup is the most watched event on earth, serving as the most challenging test for the best footballers. This is its story, told through data: how the tournament grew, the nations that host and win it, Australia's place in it, the players who defined it, and the road to a bigger World Cup in 2026.</p>
+        </div>
+        <!-- Right: Messi photo -->
+        <div class="intro-photo">
+          <img src="image%20messi%20wc/messi%20wc.jpg" alt="Lionel Messi with the 2022 World Cup trophy">
+          <p class="photo-caption">Lionel Messi, 2022 World Cup</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. HISTORY -->
+  <section>
+    <div class="section-banner banner-red">
+      <div class="wrap">
+        <p class="section-label">02 — How it grew</p>
+        <h2 class="section-heading">The History of the World Cup</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="section-intro">
+        <p>What began in 1930 as a modest gathering of thirteen nations has grown into a truly global contest, with teams from every continent. Each tournament has pulled in more countries, more players, and bigger crowds than the last, as shown in the map below.</p>
+      </div>
+
+      <!-- Choropleth container -->
+      <div class="chart chart-stack">
+        <div class="chart-textrow">
+          <div class="chart-textrow-body">
+            <p class="part-subtitle">A Growing Global Game</p>
+            <p>The map becomes more colorful as the slider shifts from 1930 to 2022; a competition that began among a small group of countries gradually spreads to every continent. A country's rate of appearance increases with the depth of the shade. As the only country to participate in all 22 World Cups, Brazil stands as the top participant. Argentina, Italy, and Germany, the traditional heavyweights that have shaped the tournament's history, are next.</p>
+          </div>
+          <div class="chart-textrow-htr">
+            <div class="how-to-read"><span class="htr-label">How to read:</span> Drag the slider to choose a year. Each country is shaded by how many World Cups it had reached up to that point. The deeper the red, the more appearances.</div>
+          </div>
+        </div>
+        <div class="chart-figure-full">
+          <div id="chart_history_map"></div>
+        </div>
+      </div>
+
+      <!-- Dumbbell container -->
+      <div class="chart chart-stack">
+        <div class="chart-textrow">
+          <div class="chart-textrow-body">
+            <p class="part-subtitle">Crowds Through the Decades</p>
+            <p>Each row compares the average attendance of a tournament with its peak attendance record. The most spectacular was in 1950, when 173,850 fans flocked to Rio's Maracanã for the final match between Uruguay and Brazil. This attendance remains the biggest in World Cup history. The tournament's appeal has only increased as it has expanded around the globe, as evidenced by the rise in average attendance, which peaked when the United States hosted in 1994.</p>
+          </div>
+          <div class="chart-textrow-htr">
+            <div class="how-to-read"><span class="htr-label">How to read:</span> Each row is one tournament. The blue ball marks the average crowd per match and the red ball marks the single biggest crowd. The longer the green line, the bigger the gap between a typical match and the record.</div>
+          </div>
+        </div>
+        <div class="chart-figure-full">
+          <div id="chart_attendance"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. COUNTRIES -->
+  <section>
+    <div class="section-banner banner-green">
+      <div class="wrap">
+        <p class="section-label label-dark">03 — Geography</p>
+        <h2 class="section-heading">Countries of the Tournament</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="section-intro">
+        <p>The World Cup has always belonged to the whole planet, but only a handful of nations have shaped it from the centre. Some have hosted the tournament and welcomed the world to their stadiums, a smaller few have gone on to lift the trophy itself. This map brings both stories together.</p>
+      </div>
+
+      <div class="chart chart-stack">
+        <div class="chart-textrow">
+          <div class="chart-textrow-body">
+            <p class="part-subtitle">Hosts and Champions</p>
+            <p>Hosting duties have spread steadily outward, from South America to other continents of the world. Despite this, winning has stayed far more concentrated, where only 8 nations have won the World Cup.</p>
+          </div>
+          <div class="chart-textrow-htr">
+            <div class="how-to-read how-to-read-green"><span class="htr-label">How to read:</span> Use the toggle to switch between hosts and winners. Countries are shaded by how many matches they have hosted, and each trophy marks a champion. The more titles a nation has won, the larger the trophy symbol.</div>
+          </div>
+        </div>
+        <div class="chart-figure-full">
+          <div id="chart_countries_map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. AUSTRALIA -->
+  <section>
+    <div class="section-banner banner-yellow">
+      <div class="wrap">
+        <p class="section-label">04 — Closer to home</p>
+        <h2 class="section-heading">Australia at the World Cup</h2>
+      </div>
+    </div>
+    <div class="wrap">
+
+      <!-- ===== Socceroos ===== -->
+      <p class="part-title">The Socceroos</p>
+      <div class="au-intro">
+        <div class="au-copy">
+          <p>Australia's men have reached the World Cup six times, but their story is one of narrow margins and rare breakthroughs. The Socceroos' finest hour came in 2006, when a golden generation reached the knockout rounds for the first time before a heartbreaking late exit to Italy. Most campaigns, though, have ended at the group stage.</p>
+          <div class="how-to-read how-to-read-yellow"><span class="htr-label">How to read:</span> The heatmap shows every match by tournament. Green is a win, grey is a draw, red is a loss. The radar shows Australia's top three Socceroos scorers across five measures. The further from the centre, the higher the value.</div>
+        </div>
+        <div class="au-photo">
+          <img src="images%20australia/tim%20cahill.jpg" alt="Tim Cahill at the 2018 World Cup">
+          <p class="photo-caption">Tim Cahill, 2018 World Cup</p>
+        </div>
+      </div>
+      <div class="chart chart-duo">
+        <div class="chart-figure"><div id="chart_socceroos"></div></div>
+        <div class="chart-figure"><div id="chart_socceroos_radar"></div></div>
+      </div>
+
+      <!-- ===== Matildas ===== -->
+      <p class="part-title">The Matildas</p>
+      <div class="au-intro">
+        <div class="au-copy">
+          <p>The Matildas have become the face of Australian women’s football. Since their 1995 debut they have grown from early exits into genuine contenders, peaking on home soil in 2023 when they reached the semi-finals and finished fourth, which is the best World Cup result by any senior Australian side, men's or women's.</p>
+          <div class="how-to-read how-to-read-yellow"><span class="htr-label">How to read:</span> The heatmap shows every match by tournament. Green is a win, grey is a draw, red is a loss. The radar profiles their top three Matildas scorers across five measures. The further from the centre, the higher the value.</div>
+        </div>
+        <div class="au-photo">
+          <img src="images%20australia/sam%20kerr.jpg" alt="Sam Kerr at the 2023 Women's World Cup">
+          <p class="photo-caption">Sam Kerr, 2023 Women's World Cup</p>
+        </div>
+      </div>
+      <div class="chart chart-duo">
+        <div class="chart-figure"><div id="chart_matildas"></div></div>
+        <div class="chart-figure"><div id="chart_matildas_radar"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. ICONIC TEAMS AND PLAYERS -->
+  <section>
+    <div class="section-banner banner-blue">
+      <div class="wrap">
+        <p class="section-label">05 — The legends</p>
+        <h2 class="section-heading">Iconic Teams &amp; Players</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="section-intro">
+        <p>Australia's story is one of many woven into the World Cup, but some names tower over them all. Across the tournament's history, certain teams and players have become legends, turning football's greatest stage into the place where their names were made. These are a few of the national teams and individuals who defined it.</p>
+      </div>
+
+      <!-- ===== Brazil ===== -->
+      <p class="part-title">Brazil: The nation with the most World Cup wins</p>
+      <div class="au-intro">
+        <div class="au-copy">
+          <p>No nation embodies the World Cup like Brazil. Five World Cups won, more than anyone, and the only country to play in all twenty-two tournaments. From Pelé's 1958 breakthrough to the samba football of 1970 and the steel of 1994 and 2002, Brazil has turned winning into an art form.</p>
+          <div class="how-to-read how-to-read-blue"><span class="htr-label">How to read:</span> Each ribbon flows from a champion nation to the year it won. The more bands there are, the more the nation has won.</div>
+        </div>
+        <div class="au-photo">
+          <img src="images%20iconic/brazil%202002.jpg" alt="Brazil's 2002 World Cup victory">
+          <p class="photo-caption">Brazil's victory, 2002 World Cup</p>
+        </div>
+      </div>
+      <div class="chart"><div id="chart_brazil"></div></div>
+
+      <!-- ===== Pelé ===== -->
+      <p class="part-title">Pelé: The player with the most World Cup wins</p>
+      <div class="au-intro">
+        <div class="au-copy">
+          <p>Pelé is the only player to win the World Cup three times, which is in 1958, 1962, and 1970. He burst onto the scene as a seventeen year old in Sweden and left as the tournament's defining figure, scoring in finals across three different decades.</p>
+          <div class="how-to-read how-to-read-blue"><span class="htr-label">How to read:</span> Each player has three bars: World Cup wins, tournaments played, and career World Cup goals. Pelé is the only one that has three World Cup wins.</div>
+        </div>
+        <div class="au-photo">
+          <img src="images%20iconic/pele%20world%20cup.jpg" alt="Pelé at the 1970 World Cup">
+          <p class="photo-caption">Pelé, 1970 World Cup</p>
+        </div>
+      </div>
+      <div class="chart"><div id="chart_pele"></div></div>
+
+      <!-- ===== Klose ===== -->
+      <p class="part-title">Miroslav Klose: The player with the most World Cup goals</p>
+      <div class="au-intro">
+        <div class="au-copy">
+          <p>No one has scored more World Cup goals than Miroslav Klose. Across four tournaments from 2002 to 2014, the German striker netted sixteen times, overtaking Ronaldo Nazário's record on his way to lifting the trophy in 2014.</p>
+          <div class="how-to-read how-to-read-blue"><span class="htr-label">How to read:</span> The bars rank the all-time top World Cup scorers. Drag the slider through the years to watch Klose climb to the top.</div>
+        </div>
+        <div class="au-photo">
+          <img src="images%20iconic/klose%202014.jpg" alt="Miroslav Klose at the 2014 World Cup" class="photo-crop">
+          <p class="photo-caption">Miroslav Klose, 2014 World Cup</p>
+        </div>
+      </div>
+      <div class="chart"><div id="chart_klose"></div></div>
+
+      <!-- ===== Forlán ===== -->
+      <p class="part-title">Diego Forlán: A redemption story</p>
+      <div class="au-intro">
+        <div class="au-copy">
+          <p>Diego Forlán was known as a flop, yet during the 2010 World Cup, he pulled off one of the most shocking performances. Forlán and the Jabulani ball was like a love story: when no one could control it, he scored five times, making him one of the top scorers and finishing as the World Cup's best player.</p>
+          <div class="how-to-read how-to-read-blue"><span class="htr-label">How to read:</span> Each bar tracks a player's goals round by round at the 2010 World Cup. Drag the slider to follow Forlán's rise to joint-top scorer.</div>
+        </div>
+        <div class="au-photo">
+          <img src="images%20iconic/diego%20forlan%202010.jpg" alt="Diego Forlán at the 2010 World Cup">
+          <p class="photo-caption">Diego Forlán, 2010 World Cup</p>
+        </div>
+      </div>
+      <div class="chart"><div id="chart_forlan"></div></div>
+
+    </div>
+  </section>
+
+  <!-- 7. ROAD TO 2026 -->
+  <section>
+    <div class="section-banner banner-purple">
+      <div class="wrap">
+        <p class="section-label">06 — What's next</p>
+        <h2 class="section-heading">The Road to 2026</h2>
+      </div>
+    </div>
+    <div class="wrap">
+
+      <p class="part-title">The Last Dance</p>
+      <div class="au-intro">
+        <div class="au-copy">
+          <p>While young talents like Lamine Yamal will play in their first World Cup, many of the sport's greatest footballers, including Lionel Messi, Cristiano Ronaldo, and Neymar Jr are expected to play their final tournament. As a fitting send-off, 2026 has been planned as the biggest World Cup ever: 48 teams across three host nations, the United States, Mexico, and Canada. The map below shows the 16 cities that will host the tournament, each stadium sized by how many fans it can hold.</p>
+          <div class="how-to-read how-to-read-purple"><span class="htr-label">How to read:</span> Each stadium marks one of the 16 host cities across the USA, Mexico, and Canada. The larger the symbol, the greater the stadium's seating capacity.</div>
+        </div>
+        <div class="au-photo">
+          <img src="images%20lamine/lamine%20yamal.jpg" alt="Lamine Yamal of the Spain national team">
+          <p class="photo-caption">Lamine Yamal, Spain national team</p>
+        </div>
+      </div>
+
+      <div class="chart">
+        <div id="chart_2026"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <p>Name: Raditya Parama Wardhana</p>
+      <p>Student ID: 37013572</p>
+      <p>Date Published: 31/05/2026</p>
+      <p class="footer-heading">Data sources</p>
+      <ul class="footer-sources">
+        <li>jfjelstul "worldcup" database (GitHub) — <a href="https://github.com/jfjelstul/worldcup" target="_blank" rel="noopener">github.com/jfjelstul/worldcup</a></li>
+        <li>FIFA World Cup attendance 1930–2022 (Kaggle) — <a href="https://www.kaggle.com/datasets/rajkumarpandey02/fifa-world-cup-attendance-19302022" target="_blank" rel="noopener">kaggle.com/datasets/rajkumarpandey02/fifa-world-cup-attendance-19302022</a></li>
+        <li>Natural Earth world map TopoJSON (FIT3179) — <a href="https://github.com/FIT3179/Vega-Lite" target="_blank" rel="noopener">github.com/FIT3179/Vega-Lite</a></li>
+        <li>2026 host city stadium capacities — <a href="https://www.roadtrips.com/world-cup/2026-world-cup-packages/venues/" target="_blank" rel="noopener">roadtrips.com/world-cup/2026-world-cup-packages/venues</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- our chart-loading script -->
+  <script src="js/charts.js"></script>
+
+</body>
+</html>

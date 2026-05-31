@@ -1,0 +1,242 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Pele - the only three-time champion",
+    "font": "AusWC2026",
+    "fontSize": 22,
+    "anchor": "start",
+    "offset": 8
+  },
+  "width": 600,
+  "height": 340,
+  "data": {
+    "values": [
+      {
+        "player": "Pelé",
+        "metric": "World Cup wins",
+        "value": 3
+      },
+      {
+        "player": "Pelé",
+        "metric": "Tournaments played",
+        "value": 4
+      },
+      {
+        "player": "Pelé",
+        "metric": "Goals",
+        "value": 12
+      },
+      {
+        "player": "Ronaldo",
+        "metric": "World Cup wins",
+        "value": 2
+      },
+      {
+        "player": "Ronaldo",
+        "metric": "Tournaments played",
+        "value": 4
+      },
+      {
+        "player": "Ronaldo",
+        "metric": "Goals",
+        "value": 15
+      },
+      {
+        "player": "Garrincha",
+        "metric": "World Cup wins",
+        "value": 2
+      },
+      {
+        "player": "Garrincha",
+        "metric": "Tournaments played",
+        "value": 3
+      },
+      {
+        "player": "Garrincha",
+        "metric": "Goals",
+        "value": 5
+      },
+      {
+        "player": "Giuseppe Meazza",
+        "metric": "World Cup wins",
+        "value": 2
+      },
+      {
+        "player": "Giuseppe Meazza",
+        "metric": "Tournaments played",
+        "value": 2
+      },
+      {
+        "player": "Giuseppe Meazza",
+        "metric": "Goals",
+        "value": 3
+      },
+      {
+        "player": "Didi",
+        "metric": "World Cup wins",
+        "value": 2
+      },
+      {
+        "player": "Didi",
+        "metric": "Tournaments played",
+        "value": 3
+      },
+      {
+        "player": "Didi",
+        "metric": "Goals",
+        "value": 3
+      },
+      {
+        "player": "Mário Zagallo",
+        "metric": "World Cup wins",
+        "value": 2
+      },
+      {
+        "player": "Mário Zagallo",
+        "metric": "Tournaments played",
+        "value": 2
+      },
+      {
+        "player": "Mário Zagallo",
+        "metric": "Goals",
+        "value": 2
+      },
+      {
+        "player": "Lionel Messi",
+        "metric": "World Cup wins",
+        "value": 1
+      },
+      {
+        "player": "Lionel Messi",
+        "metric": "Tournaments played",
+        "value": 5
+      },
+      {
+        "player": "Lionel Messi",
+        "metric": "Goals",
+        "value": 13
+      },
+      {
+        "player": "Paolo Rossi",
+        "metric": "World Cup wins",
+        "value": 1
+      },
+      {
+        "player": "Paolo Rossi",
+        "metric": "Tournaments played",
+        "value": 3
+      },
+      {
+        "player": "Paolo Rossi",
+        "metric": "Goals",
+        "value": 9
+      },
+      {
+        "player": "Diego Maradona",
+        "metric": "World Cup wins",
+        "value": 1
+      },
+      {
+        "player": "Diego Maradona",
+        "metric": "Tournaments played",
+        "value": 4
+      },
+      {
+        "player": "Diego Maradona",
+        "metric": "Goals",
+        "value": 8
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadius": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "player",
+      "type": "nominal",
+      "sort": [
+        "Pelé",
+        "Ronaldo",
+        "Garrincha",
+        "Giuseppe Meazza",
+        "Didi",
+        "Mário Zagallo",
+        "Lionel Messi",
+        "Paolo Rossi",
+        "Diego Maradona"
+      ],
+      "title": null,
+      "axis": {
+        "labelFont": "ClashDisplay",
+        "labelFontSize": 11,
+        "labelAngle": -35,
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "xOffset": {
+      "field": "metric",
+      "sort": [
+        "World Cup wins",
+        "Tournaments played",
+        "Goals"
+      ]
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "labelFont": "ClashDisplay",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "World Cup wins",
+          "Tournaments played",
+          "Goals"
+        ],
+        "range": [
+          "#f4d23c",
+          "#3aa655",
+          "#2b5fd9"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom",
+        "labelFont": "ClashDisplay",
+        "labelFontSize": 11
+      }
+    },
+    "tooltip": [
+      {
+        "field": "player",
+        "type": "nominal",
+        "title": "Player"
+      },
+      {
+        "field": "metric",
+        "type": "nominal",
+        "title": "Metric"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Value"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

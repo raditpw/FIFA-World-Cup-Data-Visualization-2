@@ -1,0 +1,1239 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Host city stadiums by seating capacity in the 2026 world cup",
+    "font": "AusWC2026",
+    "fontSize": 18,
+    "anchor": "start",
+    "offset": 8
+  },
+  "hconcat": [
+    {
+      "width": 760,
+      "height": 640,
+      "projection": {
+        "type": "albers",
+        "rotate": [
+          98,
+          0,
+          0
+        ],
+        "center": [
+          0,
+          40
+        ],
+        "scale": 660,
+        "translate": [
+          380.0,
+          320
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_110m_admin_0_countries"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#8fd18f",
+            "stroke": "white",
+            "strokeWidth": 0.7
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Vancouver",
+                "stadium": "BC Place",
+                "capacity": 54500,
+                "lat": 49.2768,
+                "lon": -123.1119,
+                "img": "image%20stadium/stadium.png",
+                "side": 34
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 34,
+            "height": 34
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Seattle",
+                "stadium": "Lumen Field",
+                "capacity": 69000,
+                "lat": 47.5952,
+                "lon": -122.3316,
+                "img": "image%20stadium/stadium.png",
+                "side": 46
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 46,
+            "height": 46
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "San Francisco",
+                "stadium": "Levi’s Stadium",
+                "capacity": 70909,
+                "lat": 37.403,
+                "lon": -121.97,
+                "img": "image%20stadium/stadium.png",
+                "side": 48
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 48,
+            "height": 48
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Los Angeles",
+                "stadium": "SoFi Stadium",
+                "capacity": 70240,
+                "lat": 33.9535,
+                "lon": -118.3392,
+                "img": "image%20stadium/stadium.png",
+                "side": 47
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 47,
+            "height": 47
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Kansas City",
+                "stadium": "Arrowhead Stadium",
+                "capacity": 76640,
+                "lat": 39.0489,
+                "lon": -94.4839,
+                "img": "image%20stadium/stadium.png",
+                "side": 52
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 52,
+            "height": 52
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Dallas",
+                "stadium": "AT&T Stadium",
+                "capacity": 92967,
+                "lat": 32.7473,
+                "lon": -97.0945,
+                "img": "image%20stadium/stadium.png",
+                "side": 64
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 64,
+            "height": 64
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Houston",
+                "stadium": "NRG Stadium",
+                "capacity": 72220,
+                "lat": 29.6847,
+                "lon": -95.4107,
+                "img": "image%20stadium/stadium.png",
+                "side": 49
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 49,
+            "height": 49
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Monterrey",
+                "stadium": "Estadio BBVA",
+                "capacity": 53460,
+                "lat": 25.669,
+                "lon": -100.244,
+                "img": "image%20stadium/stadium.png",
+                "side": 33
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 33,
+            "height": 33
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Guadalajara",
+                "stadium": "Estadio Akron",
+                "capacity": 48071,
+                "lat": 20.6818,
+                "lon": -103.4626,
+                "img": "image%20stadium/stadium.png",
+                "side": 28
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 28,
+            "height": 28
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Mexico City",
+                "stadium": "Estadio Azteca",
+                "capacity": 87523,
+                "lat": 19.3029,
+                "lon": -99.1505,
+                "img": "image%20stadium/stadium.png",
+                "side": 60
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 60,
+            "height": 60
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Toronto",
+                "stadium": "BMO Field",
+                "capacity": 45736,
+                "lat": 43.6332,
+                "lon": -79.4185,
+                "img": "image%20stadium/stadium.png",
+                "side": 26
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 26,
+            "height": 26
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Boston",
+                "stadium": "Gillette Stadium",
+                "capacity": 70000,
+                "lat": 42.0909,
+                "lon": -71.2643,
+                "img": "image%20stadium/stadium.png",
+                "side": 47
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 47,
+            "height": 47
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "New York",
+                "stadium": "MetLife Stadium",
+                "capacity": 87157,
+                "lat": 40.8136,
+                "lon": -74.0745,
+                "img": "image%20stadium/stadium.png",
+                "side": 60
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 60,
+            "height": 60
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Philadelphia",
+                "stadium": "Lincoln Financial Field",
+                "capacity": 69328,
+                "lat": 39.9008,
+                "lon": -75.1675,
+                "img": "image%20stadium/stadium.png",
+                "side": 47
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 47,
+            "height": 47
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Atlanta",
+                "stadium": "Mercedes-Benz Stadium",
+                "capacity": 75000,
+                "lat": 33.7554,
+                "lon": -84.4008,
+                "img": "image%20stadium/stadium.png",
+                "side": 51
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 51,
+            "height": 51
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "city": "Miami",
+                "stadium": "Hard Rock Stadium",
+                "capacity": 67518,
+                "lat": 25.958,
+                "lon": -80.2389,
+                "img": "image%20stadium/stadium.png",
+                "side": 45
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 45,
+            "height": 45
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "type": "nominal",
+                "title": "City"
+              },
+              {
+                "field": "stadium",
+                "type": "nominal",
+                "title": "Stadium"
+              },
+              {
+                "field": "capacity",
+                "type": "quantitative",
+                "title": "Capacity",
+                "format": ","
+              }
+            ]
+          }
+        }
+      ],
+      "view": {
+        "stroke": null,
+        "fill": "#7fc7e8"
+      }
+    },
+    {
+      "width": 120,
+      "height": 640,
+      "layer": [
+        {
+          "data": {
+            "values": [
+              {
+                "lx": 55,
+                "ly": 150,
+                "t": "Stadium capacity"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "font": "ClashDisplay",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "fill": "#1a1526",
+            "align": "center"
+          },
+          "encoding": {
+            "x": {
+              "field": "lx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "ly",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  640,
+                  0
+                ]
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lx": 55,
+                "ly": 220,
+                "s": 30,
+                "lbl": "50,000",
+                "img": "image%20stadium/stadium.png"
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 30,
+            "height": 30
+          },
+          "encoding": {
+            "x": {
+              "field": "lx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "ly",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  640,
+                  0
+                ]
+              },
+              "axis": null
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lx": 55,
+                "ly": 220,
+                "s": 30,
+                "lbl": "50,000",
+                "img": "image%20stadium/stadium.png"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "font": "ClashDisplay",
+            "fontSize": 10,
+            "dy": 40,
+            "fill": "#555",
+            "align": "center"
+          },
+          "encoding": {
+            "x": {
+              "field": "lx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "ly",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  640,
+                  0
+                ]
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "lbl",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lx": 55,
+                "ly": 350,
+                "s": 47,
+                "lbl": "70,000",
+                "img": "image%20stadium/stadium.png"
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 47,
+            "height": 47
+          },
+          "encoding": {
+            "x": {
+              "field": "lx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "ly",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  640,
+                  0
+                ]
+              },
+              "axis": null
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lx": 55,
+                "ly": 350,
+                "s": 47,
+                "lbl": "70,000",
+                "img": "image%20stadium/stadium.png"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "font": "ClashDisplay",
+            "fontSize": 10,
+            "dy": 40,
+            "fill": "#555",
+            "align": "center"
+          },
+          "encoding": {
+            "x": {
+              "field": "lx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "ly",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  640,
+                  0
+                ]
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "lbl",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lx": 55,
+                "ly": 480,
+                "s": 62,
+                "lbl": "90,000",
+                "img": "image%20stadium/stadium.png"
+              }
+            ]
+          },
+          "mark": {
+            "type": "image",
+            "width": 62,
+            "height": 62
+          },
+          "encoding": {
+            "x": {
+              "field": "lx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "ly",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  640,
+                  0
+                ]
+              },
+              "axis": null
+            },
+            "url": {
+              "field": "img",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lx": 55,
+                "ly": 480,
+                "s": 62,
+                "lbl": "90,000",
+                "img": "image%20stadium/stadium.png"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "font": "ClashDisplay",
+            "fontSize": 10,
+            "dy": 40,
+            "fill": "#555",
+            "align": "center"
+          },
+          "encoding": {
+            "x": {
+              "field": "lx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  120
+                ]
+              },
+              "axis": null
+            },
+            "y": {
+              "field": "ly",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  640,
+                  0
+                ]
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "lbl",
+              "type": "nominal"
+            }
+          }
+        }
+      ],
+      "view": {
+        "stroke": null
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "y": "independent"
+    }
+  },
+  "spacing": 0
+}

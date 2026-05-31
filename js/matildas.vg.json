@@ -1,0 +1,296 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Every Matildas World Cup match",
+    "font": "AusWC2026",
+    "fontSize": 22,
+    "anchor": "start",
+    "offset": 8
+  },
+  "width": 430,
+  "height": 320,
+  "data": {
+    "values": [
+      {
+        "year": 1995,
+        "game": "Game 1",
+        "result": "Loss",
+        "matchup": "Denmark 5–0 Australia"
+      },
+      {
+        "year": 1995,
+        "game": "Game 2",
+        "result": "Loss",
+        "matchup": "China 4–2 Australia"
+      },
+      {
+        "year": 1995,
+        "game": "Game 3",
+        "result": "Loss",
+        "matchup": "United States 4–1 Australia"
+      },
+      {
+        "year": 1999,
+        "game": "Game 1",
+        "result": "Draw",
+        "matchup": "Australia 1–1 Ghana"
+      },
+      {
+        "year": 1999,
+        "game": "Game 2",
+        "result": "Loss",
+        "matchup": "Australia 1–3 Sweden"
+      },
+      {
+        "year": 1999,
+        "game": "Game 3",
+        "result": "Loss",
+        "matchup": "China 3–1 Australia"
+      },
+      {
+        "year": 2003,
+        "game": "Game 1",
+        "result": "Loss",
+        "matchup": "Australia 1–2 Russia"
+      },
+      {
+        "year": 2003,
+        "game": "Game 2",
+        "result": "Draw",
+        "matchup": "China 1–1 Australia"
+      },
+      {
+        "year": 2003,
+        "game": "Game 3",
+        "result": "Loss",
+        "matchup": "Ghana 2–1 Australia"
+      },
+      {
+        "year": 2007,
+        "game": "Game 1",
+        "result": "Win",
+        "matchup": "Ghana 1–4 Australia"
+      },
+      {
+        "year": 2007,
+        "game": "Game 2",
+        "result": "Draw",
+        "matchup": "Australia 1–1 Norway"
+      },
+      {
+        "year": 2007,
+        "game": "Game 3",
+        "result": "Draw",
+        "matchup": "Australia 2–2 Canada"
+      },
+      {
+        "year": 2007,
+        "game": "Game 4",
+        "result": "Loss",
+        "matchup": "Brazil 3–2 Australia"
+      },
+      {
+        "year": 2011,
+        "game": "Game 1",
+        "result": "Loss",
+        "matchup": "Brazil 1–0 Australia"
+      },
+      {
+        "year": 2011,
+        "game": "Game 2",
+        "result": "Win",
+        "matchup": "Australia 3–2 Equatorial Guinea"
+      },
+      {
+        "year": 2011,
+        "game": "Game 3",
+        "result": "Win",
+        "matchup": "Australia 2–1 Norway"
+      },
+      {
+        "year": 2011,
+        "game": "Game 4",
+        "result": "Loss",
+        "matchup": "Sweden 3–1 Australia"
+      },
+      {
+        "year": 2015,
+        "game": "Game 1",
+        "result": "Loss",
+        "matchup": "United States 3–1 Australia"
+      },
+      {
+        "year": 2015,
+        "game": "Game 2",
+        "result": "Win",
+        "matchup": "Australia 2–0 Nigeria"
+      },
+      {
+        "year": 2015,
+        "game": "Game 3",
+        "result": "Draw",
+        "matchup": "Australia 1–1 Sweden"
+      },
+      {
+        "year": 2015,
+        "game": "Game 4",
+        "result": "Win",
+        "matchup": "Brazil 0–1 Australia"
+      },
+      {
+        "year": 2015,
+        "game": "Game 5",
+        "result": "Loss",
+        "matchup": "Australia 0–1 Japan"
+      },
+      {
+        "year": 2019,
+        "game": "Game 1",
+        "result": "Loss",
+        "matchup": "Australia 1–2 Italy"
+      },
+      {
+        "year": 2019,
+        "game": "Game 2",
+        "result": "Win",
+        "matchup": "Australia 3–2 Brazil"
+      },
+      {
+        "year": 2019,
+        "game": "Game 3",
+        "result": "Win",
+        "matchup": "Jamaica 1–4 Australia"
+      },
+      {
+        "year": 2019,
+        "game": "Game 4",
+        "result": "Loss",
+        "matchup": "Norway 1–1 Australia"
+      },
+      {
+        "year": 2023,
+        "game": "Game 1",
+        "result": "Win",
+        "matchup": "Australia 1-0 Republic of Ireland"
+      },
+      {
+        "year": 2023,
+        "game": "Game 2",
+        "result": "Loss",
+        "matchup": "Australia 2-3 Nigeria"
+      },
+      {
+        "year": 2023,
+        "game": "Game 3",
+        "result": "Win",
+        "matchup": "Australia 4-0 Canada"
+      },
+      {
+        "year": 2023,
+        "game": "Game 4",
+        "result": "Win",
+        "matchup": "Australia 2-0 Denmark (R16)"
+      },
+      {
+        "year": 2023,
+        "game": "Game 5",
+        "result": "Win",
+        "matchup": "Australia 0-0 France, won 7-6 pens (QF)"
+      },
+      {
+        "year": 2023,
+        "game": "Game 6",
+        "result": "Loss",
+        "matchup": "England 3-1 Australia (SF)"
+      },
+      {
+        "year": 2023,
+        "game": "Game 7",
+        "result": "Loss",
+        "matchup": "Sweden 2-0 Australia (3rd place)"
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "#ffffff",
+    "strokeWidth": 3,
+    "cornerRadius": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "game",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelFont": "ClashDisplay",
+        "labelFontSize": 10,
+        "labelAngle": 0,
+        "ticks": false,
+        "domain": false
+      }
+    },
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": "descending",
+      "title": null,
+      "axis": {
+        "labelFont": "ClashDisplay",
+        "labelFontSize": 12,
+        "ticks": false,
+        "domain": false
+      }
+    },
+    "color": {
+      "field": "result",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Win",
+          "Draw",
+          "Loss"
+        ],
+        "range": [
+          "#93d04f",
+          "#cccccc",
+          "#e8112d"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom",
+        "direction": "horizontal",
+        "labelFont": "ClashDisplay",
+        "labelFontSize": 12
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "World Cup",
+        "format": "d"
+      },
+      {
+        "field": "matchup",
+        "type": "nominal",
+        "title": "Match"
+      },
+      {
+        "field": "result",
+        "type": "nominal",
+        "title": "Result"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "grid": false
+    }
+  }
+}
