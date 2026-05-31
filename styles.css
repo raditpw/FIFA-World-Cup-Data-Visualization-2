@@ -508,3 +508,11 @@ footer a { color: var(--yellow); word-break: break-word; }
 
 /* History map year slider -> red (matches the red banner) */
 #chart_history_map input[type="range"] { accent-color: var(--red); }
+
+/* ---------- emphasis spans for intro keywords (bold + section hue, darkened for readability) ---------- */
+.em { font-weight: 700; }
+.em-green  { color: #2f7d2f; }   /* darkened green for light-green sections */
+.em-red    { color: #c8102e; }   /* slightly deepened red */
+.em-blue   { color: #2b5fd9; }
+.em-gold   { color: #b8860b; }   /* darkened gold (yellow too light) */
+.em-purple { color: #4b1e87; }
