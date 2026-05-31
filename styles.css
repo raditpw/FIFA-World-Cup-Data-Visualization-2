@@ -358,7 +358,8 @@ section { padding: 0 0 70px; }
 /* ---------- VEGA RADIO -> GREEN PILL BUTTONS (Countries "Show:" toggle) ---------- */
 #chart_countries_map .vega-bind-name,
 #chart_socceroos_radar .vega-bind-name,
-#chart_matildas_radar .vega-bind-name { display: none; }   /* hide the radio param-name labels (view_mode / who) */
+#chart_matildas_radar .vega-bind-name,
+#chart_brazil .vega-bind-name { display: none; }   /* hide the radio param-name labels (view_mode / who / selCountry) */
 .vega-bind .vega-bind-radio { display: inline-flex; gap: 10px; flex-wrap: wrap; }
 .vega-bind .vega-bind-radio label {
   display: inline-flex;
